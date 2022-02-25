@@ -14,6 +14,7 @@ The HashiCorp HCL Visual Studio Code (VS Code) extension adds syntax highlightin
  Syntax highlighting for:
 
 - HCL
-- Packer
+- Boundary
 - Nomad
+- Packer
 - Waypoint
