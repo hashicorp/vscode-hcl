@@ -1,0 +1,92 @@
+{
+  "icon": "assets/hashicorp_logomark.png",
+  "name": "hcl",
+  "publisher": "hashicorp",
+  "displayName": "HashiCorp HCL",
+  "description": "HashiCorp HCL syntax",
+  "appInsightsKey": "885372d2-6f3c-499f-9d25-b8b219983a52",
+  "version": "0.1.0",
+  "license": "MPL-2.0",
+  "preview": false,
+  "private": true,
+  "engines": {
+    "npm": "~8.X",
+    "node": "~16.X",
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "devops",
+    "hcl"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hashicorp/vscode-hcl.git"
+  },
+  "activationEvents": [
+    "onLanguage:hcl",
+    "workspaceContains:**/*.hcl",
+    "workspaceContains:**/*.nomad"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "languages": [
+      {
+        "id": "hcl",
+        "aliases": [
+          "HCL"
+        ],
+        "extensions": [
+          ".hcl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hcl",
+        "scopeName": "source.hcl",
+        "path": "./syntaxes/hcl.tmGrammar.json"
+      }
+    ]
+  },
+  "scripts": {
+    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
+    "compile": "npm run esbuild",
+    "watch": "npm run esbuild-watch",
+    "vscode:prepublish": "npm run esbuild-base -- --minify",
+    "package": "vsce package",
+    "lint": "eslint src --ext ts",
+    "prettier": "prettier \"**/*.+(js|json|ts)\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --check",
+    "pretest": "npm run compile && npm run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "@vscode/extension-telemetry": "^0.4.9"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^14.18.12",
+    "@types/vscode": "^1.61.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "@vscode/test-electron": "^2.0.3",
+    "esbuild": "^0.14.23",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "glob": "^7.2.0",
+    "mocha": "^9.1.3",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4",
+    "vsce": "^2.6.7"
+  }
+}
