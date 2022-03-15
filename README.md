@@ -1,6 +1,6 @@
 # HCL Visual Studio Code Extension
 
-<img alt="HashiCorp HCL" src="assets/hashicorp_banner.png" width="600px">
+<img alt="HashiCorp HCL" src="assets/hashicorp_banner_light.png" width="600px">
 
 The HashiCorp HCL Visual Studio Code (VS Code) extension adds syntax highlighting for <a href="https://www.hashicorp.com/">HCL</a> files.
 

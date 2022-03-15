@@ -1,5 +1,5 @@
 {
-  "icon": "assets/hashicorp_logomark.png",
+  "icon": "assets/hashicorp_logo_mark_dark.png",
   "name": "hcl",
   "publisher": "hashicorp",
   "displayName": "HashiCorp HCL",
@@ -19,9 +19,19 @@
     "Other"
   ],
   "keywords": [
+    "HashiCorp",
     "devops",
+    "cloud",
     "hcl"
   ],
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/hashicorp/vscode-hcl",
+  "bugs": {
+    "url": "https://github.com/hashicorp/vscode-hcl/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hashicorp/vscode-hcl.git"
