@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import got from 'got';
 
 interface ExtensionInfo {
   name: string;
@@ -19,28 +20,12 @@ function getExtensionInfo(): ExtensionInfo {
   };
 }
 
-async function downloadFile(url: string, fileName: string) {
-  const writer = fs.createWriteStream(fileName);
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const axios = require('axios').default;
-  const response = await axios({
-    url,
-    method: 'GET',
-    responseType: 'stream',
-  });
-  response.data.pipe(writer);
-  return new Promise((resolve, reject) => {
-    writer.on('finish', resolve);
-    writer.on('error', reject);
-  });
-}
-
 async function run(info: ExtensionInfo) {
   const release = `v${info.syntaxVersion}`;
 
   const fileName = `${info.name}.tmGrammar.json`;
   const url = `https://github.com/hashicorp/syntax/releases/download/${release}/${fileName}`;
-  console.log(url);
+  console.log(`Downloading: ${url}`);
 
   const cwd = path.resolve(__dirname);
   const buildDir = path.basename(cwd);
@@ -53,8 +38,9 @@ async function run(info: ExtensionInfo) {
   }
   fs.mkdirSync(installPath);
 
-  await downloadFile(url, fpath);
-  console.log('Download Completed');
+  const content = await got({ url }).text();
+  fs.writeFileSync(fpath, content);
+  console.log(`Download completed: ${fpath}`);
 }
 
 const info = getExtensionInfo();
