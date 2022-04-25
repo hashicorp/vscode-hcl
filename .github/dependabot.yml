@@ -6,3 +6,14 @@ updates:
     schedule:
       interval: "daily"
     labels: ["dependencies"]
+    allow:
+      - dependency-type: "production"
+
+  - package-ecosystem: "npm"
+    versioning-strategy: lockfile-only
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies"]
+    allow:
+      - dependency-type: "development"
