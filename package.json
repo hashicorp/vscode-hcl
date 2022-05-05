@@ -1,5 +1,5 @@
 {
-  "icon": "assets/hashicorp_logo_mark_dark.png",
+  "icon": "assets/hashicorp_logo_mark_light.png",
   "name": "hcl",
   "publisher": "hashicorp",
   "displayName": "HashiCorp HCL",
