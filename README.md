@@ -21,4 +21,4 @@ The HashiCorp HCL Visual Studio Code (VS Code) extension adds syntax highlightin
 
 ## Credits
 
- - [William Holroyd](https://github.com/wholroyd) for past maintenance of [`wholroyd.HCL`](https://marketplace.visualstudio.com/items?itemName=wholroyd.HCL) VS Code extension and for agreeing to the extension namespace transfer to make the transition conflict-less and easy for existing users
+ - [William Holroyd](https://github.com/wholroyd) for past maintenance of [`wholroyd.HCL`](https://github.com/wholroyd/vscode-hcl) VS Code extension and for agreeing to the extension namespace transfer to make the transition conflict-less and easy for existing users
