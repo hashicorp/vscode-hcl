@@ -41,8 +41,7 @@
   },
   "activationEvents": [
     "onLanguage:hcl",
-    "workspaceContains:**/*.hcl",
-    "workspaceContains:**/*.nomad"
+    "workspaceContains:**/*.hcl"
   ],
   "main": "./out/extension",
   "contributes": {
