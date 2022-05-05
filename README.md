@@ -1,8 +1,8 @@
-# HCL Visual Studio Code Extension
+# HCL Extension for Visual Studio Code 
 
 <img alt="HashiCorp HCL" src="assets/hashicorp_banner_light.png" width="600px">
 
-The HashiCorp HCL Visual Studio Code (VS Code) extension adds syntax highlighting for <a href="https://www.hashicorp.com/">HCL</a> files.
+The HashiCorp HCL Extension for Visual Studio Code (VS Code) adds syntax highlighting for <a href="https://www.hashicorp.com/">HCL</a> files.
 
 ## Quick Start
 
@@ -11,13 +11,15 @@ The HashiCorp HCL Visual Studio Code (VS Code) extension adds syntax highlightin
 
 ## Features
 
- Syntax highlighting for:
+This extension will provide syntax highlighting for all HashiCorp products that use `.hcl` as the file extension:
 
 - HCL
 - Boundary
 - Nomad
 - Packer
 - Waypoint
+
+HCL is a toolkit for creating structured configuration languages that are both human- and machine-friendly, for use with command-line tools. HCL provides a set of constructs that can be used by a calling application to construct a configuration language. Most HashiCorp products use implementations of HCL for their configuration language.
 
 ## Credits
 
