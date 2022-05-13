@@ -8,10 +8,6 @@ on:
 jobs:
   build:
     name: Package
-    strategy:
-      matrix:
-        include:
-          - vsce_target: "Universal"
     runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v2
@@ -32,7 +28,7 @@ jobs:
           node-version-file: ".nvmrc"
       - run: npm ci
       - name: Package VSIX
-        run: npm run package -- --target=${{ matrix.vsce_target }}
+        run: npm run package
       - name: Upload vsix as artifact
         uses: actions/upload-artifact@v2
         with:
