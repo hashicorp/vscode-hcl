@@ -11,22 +11,19 @@ The [HashiCorp HCL Extension](https://marketplace.visualstudio.com/items?itemNam
 
 ## Features
 
-This extension provides generic [HCL](https://github.com/hashicorp/hcl#hcl) syntax highlighting for files that use `.hcl` as the file extension.
+This extension provides [HCL](https://github.com/hashicorp/hcl#hcl) syntax highlighting for files that use `.hcl` as the file extension, for example:
 
-HashiCorp products that use HCL as a configuration format:
-
-- Boundary
-- Nomad
-- Packer
-- Waypoint
+- [Nomad job specification](https://www.nomadproject.io/docs/job-specification/hcl2)
+- [Packer template](https://www.packer.io/docs/templates/hcl_templates)
+- [Waypoint project](https://www.waypointproject.io/docs/waypoint-hcl)
 
 ## Usage
 
-The [HashiCorp HCL Extension](https://marketplace.visualstudio.com/items?itemName=hashicorp.HCL) is a grammar only extension targeted to provide generic HCL syntax highlighting for files not already accounted for by a more specific HashiCorp extension. For example, Terraform syntax highlighting is already provided by the official [HashiCorp Terraform Extension](https://marketplace.visualstudio.com/items?itemName=hashicorp.terraform) for VS Code.
+The [HashiCorp HCL Extension](https://marketplace.visualstudio.com/items?itemName=hashicorp.HCL) is a grammar only extension targeted to provide HCL syntax highlighting for files not already accounted for by a more specific product-focused extension. For example, Terraform syntax highlighting is already provided by the official [HashiCorp Terraform Extension](https://marketplace.visualstudio.com/items?itemName=hashicorp.terraform) for VS Code.
 
 Current Terraform users can install the HCL extension alongside the Terraform Extension and find that they can use HCL files without conflict. Users can also install the HCL Extension separately from the Terraform Extension if they only want HCL support.
 
-For more information about HCL visit https://github.com/hashicorp/hcl-lang#what-is-hcl.
+Read more about HCL at https://github.com/hashicorp/hcl.
 
 ## Credits
 
