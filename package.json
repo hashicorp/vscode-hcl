@@ -1,5 +1,5 @@
 {
-  "icon": "assets/hashicorp_logo_mark_light.png",
+  "icon": "assets/hashicorp_logo_mark_light_universal_radius45.png",
   "name": "hcl",
   "publisher": "hashicorp",
   "displayName": "HashiCorp HCL",
@@ -28,8 +28,8 @@
     "hcl"
   ],
   "galleryBanner": {
-    "color": "#000000",
-    "theme": "dark"
+    "color": "#FFF",
+    "theme": "light"
   },
   "homepage": "https://github.com/hashicorp/vscode-hcl",
   "bugs": {
