@@ -15,9 +15,6 @@ INTERNAL:
  - build(deps-dev): bump @typescript-eslint/parser from 5.23.0 to 5.25.0 ([#88](https://github.com/hashicorp/vscode-hcl/pull/88))
  - build(deps-dev): bump vsce from 2.7.0 to 2.8.0 ([#89](https://github.com/hashicorp/vscode-hcl/pull/89))
 
-
-**Full Changelog**: https://github.com/hashicorp/vscode-hcl/compare/v0.1.0...v0.1.1
-
 ## [0.1.0] (2022-05-13)
 
 ENHANCEMENTS:
