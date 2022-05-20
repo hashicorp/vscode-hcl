@@ -1,3 +1,23 @@
+## [0.1.1] (2022-05-20)
+
+BUG FIXES:
+
+ - Variables with no space between them break syntax highlighting by @kamilturek in https://github.com/hashicorp/syntax/pull/34
+
+ENHANCEMENTS:
+
+ - Use theme-universal icon with solid background by @radeksimko in https://github.com/hashicorp/vscode-hcl/pull/90
+
+INTERNAL:
+
+ - build(deps-dev): bump glob from 7.2.0 to 7.2.3 by @dependabot in https://github.com/hashicorp/vscode-hcl/pull/83
+ - build(deps-dev): bump @typescript-eslint/eslint-plugin from 5.23.0 to 5.25.0 by @dependabot in https://github.com/hashicorp/vscode-hcl/pull/87
+ - build(deps-dev): bump @typescript-eslint/parser from 5.23.0 to 5.25.0 by @dependabot in https://github.com/hashicorp/vscode-hcl/pull/88
+ - build(deps-dev): bump vsce from 2.7.0 to 2.8.0 by @dependabot in https://github.com/hashicorp/vscode-hcl/pull/89
+
+
+**Full Changelog**: https://github.com/hashicorp/vscode-hcl/compare/v0.1.0...v0.1.1
+
 ## [0.1.0] (2022-05-13)
 
 ENHANCEMENTS:
