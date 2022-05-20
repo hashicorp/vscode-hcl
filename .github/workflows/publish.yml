@@ -32,7 +32,6 @@ jobs:
       - name: Upload vsix as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ matrix.vsce_target }}
           path: "*.vsix"
 
   publish:
