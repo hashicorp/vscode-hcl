@@ -1,6 +1,8 @@
 .github
-.vscode
-.vscode-test
+.vscode/
+.vscode-test/
+.vscode-test-web/
+build/
 node_modules/
 src/
 .editorconfig

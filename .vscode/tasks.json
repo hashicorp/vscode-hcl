@@ -5,18 +5,19 @@
   "tasks": [
     {
       "type": "npm",
-      "script": "watch",
-      "group": "build",
-      "problemMatcher": "$esbuild-watch",
-      "isBackground": true,
-      "label": "npm: watch"
+      "script": "compile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$ts-webpack", "$tslint-webpack"]
     },
     {
       "type": "npm",
-      "script": "build",
+      "script": "watch",
       "group": "build",
-      "problemMatcher": "$esbuild",
-      "label": "npm: build"
-    },
+      "isBackground": true,
+      "problemMatcher": ["$ts-webpack-watch", "$tslint-webpack-watch"]
+    }
   ]
 }

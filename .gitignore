@@ -1,6 +1,8 @@
 out/
 node_modules/
 syntaxes/
+.vscode-test/
+.vscode-test-web/
 *.vsix
 .DS_Store
 .vscode-test
