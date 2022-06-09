@@ -1,8 +1,14 @@
+## [0.2.0] (Unreleased)
+
+BUG FIXES:
+ - Variables with no space between them break syntax highlighting ([syntax#34](https://github.com/hashicorp/syntax/pull/34))
+ - Fix parsing block with dash in name ([syntax#42](https://github.com/hashicorp/syntax/pull/42))
+
 ## [0.1.1] (2022-05-20)
 
 BUG FIXES:
 
- - Variables with no space between them break syntax highlighting ([#34](https://github.com/hashicorp/syntax/pull/34))
+ - Variables with no space between them break syntax highlighting ([syntax#34](https://github.com/hashicorp/syntax/pull/34))
 
 ENHANCEMENTS:
 
