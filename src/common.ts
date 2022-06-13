@@ -1,4 +1,3 @@
-import * as path from 'path';
 import TelemetryReporter from '@vscode/extension-telemetry';
 import * as vscode from 'vscode';
 
