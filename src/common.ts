@@ -14,9 +14,47 @@ export function activateExtension(context: vscode.ExtensionContext) {
 
   reporter.sendTelemetryEvent('startExtension');
   outputChannel.appendLine(`Started: HCL ${vscode.env.appHost}`);
+
+  vscode.workspace.onDidOpenTextDocument((document) => {
+    if (document === undefined) {
+      return;
+    }
+
+    if (document.isUntitled) {
+      // Untitled files are files which haven't been saved yet,
+      // so we don't know if they are hcl so we return
+      return;
+    }
+
+    const product = detectProduct(document);
+    if (product === undefined) {
+      return;
+    }
+
+    reporter.sendTelemetryEvent('textDocument/didOpen', {
+      type: product,
+    });
+  });
 }
 
 export function deactivateExtension() {
   reporter.sendTelemetryEvent('stopExtension');
   outputChannel.appendLine(`Stopped: HCL ${vscode.env.appHost}`);
+}
+
+function detectProduct(doc: vscode.TextDocument) {
+  if (doc.fileName === 'waypoint.hcl') {
+    return 'waypoint';
+  }
+  if (doc.fileName.endsWith('pkr.hcl') || doc.fileName.endsWith('pkrvars.hcl')) {
+    return 'packer';
+  }
+  if (doc.fileName.endsWith('nomad')) {
+    return 'nomad';
+  }
+  if (doc.fileName.endsWith('hcl')) {
+    return 'hcl';
+  }
+
+  return undefined;
 }
