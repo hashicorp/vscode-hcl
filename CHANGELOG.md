@@ -9,6 +9,10 @@ ENHANCEMENTS:
 
  - Enable github.dev and vscode.dev support ([#114](https://github.com/hashicorp/vscode-hcl/pull/114))
 
+INTERNAL:
+
+ - Measure usage of known products ([#117](https://github.com/hashicorp/vscode-hcl/pull/117))
+
 ## [0.1.1] (2022-05-20)
 
 BUG FIXES:
