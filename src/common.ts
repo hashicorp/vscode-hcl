@@ -43,19 +43,18 @@ export function deactivateExtension() {
 }
 
 function detectProduct(doc: vscode.TextDocument) {
-  let product = undefined;
-
   if (doc.fileName === 'waypoint.hcl') {
-    product = 'waypoint';
-  } else if (doc.fileName.endsWith('pkr.hcl') || doc.fileName.endsWith('pkrvars.hcl')) {
-    product = 'packer';
-  } else if (doc.fileName.endsWith('nomad')) {
-    product = 'nomad';
-  } else if (doc.fileName.endsWith('hcl')) {
-    product = 'hcl';
-  } else {
-    product = undefined;
+    return 'waypoint';
+  }
+  if (doc.fileName.endsWith('pkr.hcl') || doc.fileName.endsWith('pkrvars.hcl')) {
+    return 'packer';
+  }
+  if (doc.fileName.endsWith('nomad')) {
+    return 'nomad';
+  }
+  if (doc.fileName.endsWith('hcl')) {
+    return 'hcl';
   }
 
-  return product;
+  return undefined;
 }
