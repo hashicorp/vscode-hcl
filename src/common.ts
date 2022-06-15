@@ -46,13 +46,16 @@ function detectProduct(doc: vscode.TextDocument) {
   if (doc.fileName === 'waypoint.hcl') {
     return 'waypoint';
   }
-  if (doc.fileName.endsWith('pkr.hcl') || doc.fileName.endsWith('pkrvars.hcl')) {
+  if (doc.fileName.endsWith('.pkr.hcl') || doc.fileName.endsWith('.pkrvars.hcl')) {
     return 'packer';
   }
-  if (doc.fileName.endsWith('nomad')) {
+  if (doc.fileName.endsWith('.tf') || doc.fileName.endsWith('.tfvars')) {
+    return 'terraform';
+  }
+  if (doc.fileName.endsWith('.nomad')) {
     return 'nomad';
   }
-  if (doc.fileName.endsWith('hcl')) {
+  if (doc.fileName.endsWith('.hcl')) {
     return 'hcl';
   }
 
