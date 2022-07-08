@@ -1,3 +1,24 @@
+## [0.2.1] (2022-07-08)
+
+INTERNAL:
+
+ - telemetry: Measure Terraform usage ([#123](https://github.com/hashicorp/vscode-hcl/pull/123))
+ - telemetry: Further break down language IDs ([#134](https://github.com/hashicorp/vscode-hcl/pull/134))
+ - build(deps-dev): bump @vscode/test-electron from 2.1.4 to 2.1.5 ([#129](https://github.com/hashicorp/vscode-hcl/pull/129))
+ - build(deps-dev): bump eslint from 8.16.0 to 8.17.0 ([#119](https://github.com/hashicorp/vscode-hcl/pull/119))
+ - build(deps-dev): bump eslint from 8.17.0 to 8.18.0 ([#126](https://github.com/hashicorp/vscode-hcl/pull/126))
+ - build(deps-dev): bump eslint from 8.18.0 to 8.19.0 ([#133](https://github.com/hashicorp/vscode-hcl/pull/133))
+ - build(deps-dev): bump eslint-plugin-prettier from 4.0.0 to 4.1.0 ([#130](https://github.com/hashicorp/vscode-hcl/pull/130))
+ - build(deps-dev): bump eslint-plugin-prettier from 4.1.0 to 4.2.1 ([#131](https://github.com/hashicorp/vscode-hcl/pull/131))
+ - build(deps-dev): bump prettier from 2.6.2 to 2.7.0 ([#122](https://github.com/hashicorp/vscode-hcl/pull/122))
+ - build(deps-dev): bump prettier from 2.7.0 to 2.7.1 ([#124](https://github.com/hashicorp/vscode-hcl/pull/124))
+ - build(deps-dev): bump ts-loader from 9.3.0 to 9.3.1 ([#128](https://github.com/hashicorp/vscode-hcl/pull/128))
+ - build(deps-dev): bump ts-node from 10.8.0 to 10.8.1 ([#121](https://github.com/hashicorp/vscode-hcl/pull/121))
+ - build(deps-dev): bump ts-node from 10.8.1 to 10.8.2 ([#132](https://github.com/hashicorp/vscode-hcl/pull/132))
+ - build(deps-dev): bump typescript from 4.7.3 to 4.7.4 ([#125](https://github.com/hashicorp/vscode-hcl/pull/125))
+ - build(deps-dev): bump vsce from 2.9.1 to 2.9.2 ([#127](https://github.com/hashicorp/vscode-hcl/pull/127))
+ - build(deps-dev): bump webpack-cli from 4.9.2 to 4.10.0 ([#120](https://github.com/hashicorp/vscode-hcl/pull/120))
+
 ## [0.2.0] (2022-06-13)
 
 BUG FIXES:
