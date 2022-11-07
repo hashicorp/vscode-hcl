@@ -46,6 +46,9 @@ function detectProduct(doc: vscode.TextDocument) {
   if (doc.fileName === 'waypoint.hcl') {
     return 'waypoint';
   }
+  if (doc.fileName === 'sentinel.hcl') {
+    return 'sentinel';
+  }
   if (doc.fileName.endsWith('.pkr.hcl')) {
     return 'packer';
   }
