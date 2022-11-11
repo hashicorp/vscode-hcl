@@ -1,3 +1,14 @@
+## [0.3.0] (2022-11-14)
+
+ENHANCEMENTS:
+
+* Add icon for HCL files [#151](https://github.com/hashicorp/vscode-hcl/pull/151)
+* Add Sentinel to telemetry [#162](https://github.com/hashicorp/vscode-hcl/pull/162)
+
+INTERNAL:
+
+* Update MPL-2.0 LICENSE [#166](https://github.com/hashicorp/vscode-hcl/pull/166)
+
 ## [0.2.1] (2022-07-08)
 
 INTERNAL:
@@ -66,7 +77,9 @@ ENHANCEMENTS:
  - Fix Publish Action ([#81](https://github.com/hashicorp/vscode-hcl/pull/81))
 
 <!-- Links to tag comparisons -->
-[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.2.0...main
+[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.0...main
+[0.3.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.2.1...v0.3.0
+[0.2.1]: https://github.com/hashicorp/vscode-hcl/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/hashicorp/vscode-hcl/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/hashicorp/vscode-hcl/commits/v0.1.0
