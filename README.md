@@ -23,6 +23,10 @@ Current Terraform users can install the HCL extension alongside the Terraform Ex
 
 Read more about HCL at https://github.com/hashicorp/hcl.
 
+## Telemetry
+
+We use telemetry to collect data about opened file _types_ which are implied from file names (such as `terraform` for `*.tf` or `packer` for `*.pkr.hcl`). This helps us better understand usage and make better informed product decisions. You can configure VS Code to send all telemetry, or turn it off entirely by [configuring](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting) `"telemetry.telemetryLevel"` to your desired value (e.g. `"off"` or `"all"`). You can also [monitor what's being sent](https://code.visualstudio.com/docs/getstarted/telemetry#_output-channel-for-telemetry-events) in your logs.
+
 ## Credits
 
  - We thank [William Holroyd](https://github.com/wholroyd) for creation and past maintenance of [`wholroyd.HCL`](https://marketplace.visualstudio.com/items?itemName=wholroyd.HCL) VS Code extension and for agreeing to the extension namespace transfer to make the transition conflict-less and easy for existing users
