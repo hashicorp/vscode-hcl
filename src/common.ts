@@ -1,4 +1,5 @@
 import TelemetryReporter from '@vscode/extension-telemetry';
+import path = require('path');
 import * as vscode from 'vscode';
 
 const brand = `HashiCorp HCL`;
@@ -43,34 +44,38 @@ export function deactivateExtension() {
 }
 
 function detectProduct(doc: vscode.TextDocument) {
-  if (doc.fileName === 'waypoint.hcl') {
+  // Extract the filename since doc.fileName
+  // is actually full path, not the file *name*
+  const fileName = path.basename(doc.uri.fsPath);
+
+  if (fileName === 'waypoint.hcl') {
     return 'waypoint';
   }
-  if (doc.fileName === 'sentinel.hcl') {
+  if (fileName === 'sentinel.hcl') {
     return 'sentinel';
   }
-  if (doc.fileName.endsWith('.pkr.hcl')) {
+  if (fileName.endsWith('.pkr.hcl')) {
     return 'packer';
   }
-  if (doc.fileName.endsWith('.pkrvars.hcl')) {
-    return 'packer-vars'
+  if (fileName.endsWith('.pkrvars.hcl')) {
+    return 'packer-vars';
   }
-  if (doc.fileName.endsWith('.tf')) {
+  if (fileName.endsWith('.tf')) {
     return 'terraform';
   }
-  if (doc.fileName.endsWith('.tfvars')) {
-    return 'terraform-vars'
+  if (fileName.endsWith('.tfvars')) {
+    return 'terraform-vars';
   }
-  if (doc.fileName === '.terraform.lock.hcl') {
+  if (fileName === '.terraform.lock.hcl') {
     return 'terraform-lock';
   }
-  if (doc.fileName === 'terragrunt.hcl') {
-    return 'terragrunt'
+  if (fileName === 'terragrunt.hcl') {
+    return 'terragrunt';
   }
-  if (doc.fileName.endsWith('.nomad')) {
+  if (fileName.endsWith('.nomad')) {
     return 'nomad';
   }
-  if (doc.fileName.endsWith('.hcl')) {
+  if (fileName.endsWith('.hcl')) {
     return 'hcl';
   }
 
