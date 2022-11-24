@@ -1,17 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 106.9 113.1" style="enable-background:new 0 0 106.9 113.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-</style>
-<title>iAsset 1</title>
-<g id="Layer_2">
-	<g id="Logo">
-		<polygon class="st0" points="44.5,0 0,25.7 0,25.7 0,87.4 16.7,97.1 16.7,35.3 44.5,19.3 		"/>
-		<polygon class="st0" points="62.3,0 62.3,49.2 44.5,49.2 44.5,30.8 27.8,40.5 27.8,103.4 44.5,113.1 44.5,64.1 62.3,64.1 
-			62.3,82.3 79.1,72.7 79.1,9.7 		"/>
-		<polygon class="st0" points="62.3,113.1 106.9,87.4 106.9,87.4 106.9,25.7 90.1,16.1 90.1,77.8 62.3,93.8 		"/>
-	</g>
-</g>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.8353 0.535004L2 3.92582V3.92846V12.0722L4.19184 13.3473V5.20085L7.8353 3.08241V0.535004Z" fill="#d4d7d6"/>
+<path d="M10.1647 0.535004V7.02231H7.83529V4.60161L5.64214 5.87663V14.188L7.83529 15.4657V8.99687H10.1647V11.4017L12.3565 10.1267V1.81003L10.1647 0.535004Z" fill="#d4d7d6"/>
+<path d="M10.1647 15.4683L16 12.0775V12.0749V3.9311L13.8069 2.65608V10.8025L10.1647 12.9209V15.4683Z" fill="#d4d7d6"/>
 </svg>
