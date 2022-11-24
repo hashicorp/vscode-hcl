@@ -85,7 +85,8 @@
     "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
   },
   "dependencies": {
-    "@vscode/extension-telemetry": "^0.5.2"
+    "@vscode/extension-telemetry": "^0.5.2",
+    "path-browserify": "^1.0.1"
   },
   "devDependencies": {
     "@types/glob": "^7.2.0",
