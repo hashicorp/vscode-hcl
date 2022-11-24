@@ -1,3 +1,14 @@
+## [0.3.1] (2022-11-24)
+
+BUG FIXES:
+
+* Update icon for HCL files [#174](https://github.com/hashicorp/vscode-hcl/pull/174)
+* Telemetry: Fix product detection [#176](https://github.com/hashicorp/vscode-hcl/pull/176)
+
+ENHANCEMENTS:
+
+* Readme: Add section to mention telemetry [#173](https://github.com/hashicorp/vscode-hcl/pull/173)
+
 ## [0.3.0] (2022-11-14)
 
 ENHANCEMENTS:
@@ -77,7 +88,8 @@ ENHANCEMENTS:
  - Fix Publish Action ([#81](https://github.com/hashicorp/vscode-hcl/pull/81))
 
 <!-- Links to tag comparisons -->
-[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.0...main
+[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.1...main
+[0.3.1]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/hashicorp/vscode-hcl/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.1.1...v0.2.0
