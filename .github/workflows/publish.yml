@@ -10,27 +10,28 @@ jobs:
     name: Package
     runs-on: "ubuntu-latest"
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Repo
+        uses: actions/checkout@v3
       - name: Read extension version
         id: ext-version
-        run: |
-          content=`cat ./package.json | jq -r .version`
-          echo "::set-output name=content::$content"
+        run: echo "VERSION=$(cat ./package.json | jq -r .version)" >> $GITHUB_OUTPUT
       - name: Ensure version matches with tag
-        if: ${{ github.ref != format('refs/tags/v{0}', steps.ext-version.outputs.content) }}
+        if: ${{ github.ref != format('refs/tags/v{0}', steps.ext-version.outputs.VERSION) }}
         run: |
           echo "Version mismatch!"
           echo "Received ref: ${{ github.ref }}"
-          echo "Expected ref: refs/tags/v${{ steps.ext-version.outputs.content }}"
+          echo "Expected ref: refs/tags/v${{ steps.ext-version.outputs.VERSION }}"
           exit 1
-      - uses: actions/setup-node@v2
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version-file: ".nvmrc"
-      - run: npm ci
+      - name: Install dependencies
+        run: npm ci
       - name: Package VSIX
         run: npm run package
-      - name: Upload vsix as artifact
-        uses: actions/upload-artifact@v2
+      - name: Upload VSIX as artifact
+        uses: actions/upload-artifact@v3
         with:
           path: "*.vsix"
 
@@ -40,7 +41,7 @@ jobs:
     needs: build
     if: success() && startsWith( github.ref, 'refs/tags/v')
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
       - name: Publish Extension
         run: npx vsce publish --no-git-tag-version --packagePath $(find . -iname *.vsix)
         env:
