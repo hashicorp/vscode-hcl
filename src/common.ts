@@ -72,6 +72,9 @@ function detectProduct(doc: vscode.TextDocument) {
   if (fileName === 'terragrunt.hcl') {
     return 'terragrunt';
   }
+  if (fileName === '.tflint.hcl') {
+    return 'tflint';
+  }
   if (fileName.endsWith('.nomad')) {
     return 'nomad';
   }
