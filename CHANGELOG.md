@@ -1,3 +1,13 @@
+## [0.3.2] (Unreleased)
+
+BUG FIXES:
+
+* Improve attribute name matching [syntax#49](https://github.com/hashicorp/syntax/pull/49)
+
+ENHANCEMENTS:
+
+* telemetry: track `.tflint.hcl` [#182](https://github.com/hashicorp/vscode-hcl/pull/182)
+
 ## [0.3.1] (2022-11-24)
 
 BUG FIXES:
