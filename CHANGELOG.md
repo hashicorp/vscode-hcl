@@ -1,4 +1,4 @@
-## [0.3.2] (Unreleased)
+## [0.3.2] (2022-12-15)
 
 BUG FIXES:
 
@@ -98,7 +98,8 @@ ENHANCEMENTS:
  - Fix Publish Action ([#81](https://github.com/hashicorp/vscode-hcl/pull/81))
 
 <!-- Links to tag comparisons -->
-[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.1...main
+[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.2...main
+[0.3.2]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/hashicorp/vscode-hcl/compare/v0.2.0...v0.2.1
