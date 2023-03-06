@@ -80,7 +80,7 @@ function detectProduct(doc: vscode.TextDocument) {
   if (fileName === '.tflint.hcl') {
     return 'tflint';
   }
-  if (fileName.endsWith('.nomad')) {
+  if (fileName.endsWith('.nomad') || fileName.endsWith('.nomad.hcl')) {
     return 'nomad';
   }
   if (fileName.endsWith('.hcl')) {
