@@ -40,7 +40,6 @@
     "url": "https://github.com/hashicorp/vscode-hcl.git"
   },
   "activationEvents": [
-    "onLanguage:hcl",
     "workspaceContains:**/*.hcl"
   ],
   "main": "./out/extension",
