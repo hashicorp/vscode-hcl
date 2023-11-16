@@ -13,8 +13,8 @@
     "version": "0.4.1"
   },
   "engines": {
-    "npm": "~8.X",
-    "node": "~16.X",
+    "npm": "~9.X",
+    "node": "~18.X",
     "vscode": "^1.61.0"
   },
   "categories": [
@@ -40,7 +40,6 @@
     "url": "https://github.com/hashicorp/vscode-hcl.git"
   },
   "activationEvents": [
-    "onLanguage:hcl",
     "workspaceContains:**/*.hcl"
   ],
   "main": "./out/extension",
