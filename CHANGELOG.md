@@ -1,3 +1,19 @@
+## [0.4.0] (2024-04-10)
+
+BUG FIXES:
+
+* Improve highlighting within objects/maps [syntax#112](https://github.com/hashicorp/syntax/pull/112)
+* Fix mis-highlight for `=>` [syntax#115](https://github.com/hashicorp/syntax/pull/115)
+* Fix mis-highlight for conditionals detected as a block [syntax#116](https://github.com/hashicorp/syntax/pull/116)
+* Fix inline for-expression matching [syntax#117](https://github.com/hashicorp/syntax/pull/117)
+* Be more permissive in allowed characters in a block label [syntax#94](https://github.com/hashicorp/syntax/pull/94)
+
+ENHANCEMENTS:
+
+* Add support for namespaced functions [syntax#110](https://github.com/hashicorp/syntax/pull/110)
+* Recognise new Nomad naming convention [#213](https://github.com/hashicorp/vscode-hcl/pull/213)
+* Update to Node v18 [#277](https://github.com/hashicorp/vscode-hcl/pull/277)
+
 ## [0.3.2] (2022-12-15)
 
 BUG FIXES:
@@ -98,7 +114,8 @@ ENHANCEMENTS:
  - Fix Publish Action ([#81](https://github.com/hashicorp/vscode-hcl/pull/81))
 
 <!-- Links to tag comparisons -->
-[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.2...main
+[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.4.0...main
+[0.4.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.2...v0.4.0
 [0.3.2]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.2.1...v0.3.0
