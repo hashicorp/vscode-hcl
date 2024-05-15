@@ -10,7 +10,7 @@
   "preview": false,
   "private": true,
   "syntax": {
-    "version": "0.5.0"
+    "version": "0.6.0"
   },
   "engines": {
     "npm": "~10.X",
