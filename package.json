@@ -5,7 +5,7 @@
   "displayName": "HashiCorp HCL",
   "description": "HashiCorp HCL syntax",
   "appInsightsKey": "885372d2-6f3c-499f-9d25-b8b219983a52",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "license": "MPL-2.0",
   "preview": false,
   "private": true,

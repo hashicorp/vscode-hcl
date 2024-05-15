@@ -1,3 +1,9 @@
+## [0.5.0] (2024-05-15)
+
+### BUG FIXES
+
+* Allow curly braces in block label strings [syntax#120](https://github.com/hashicorp/syntax/pull/120)
+
 ## [0.4.0] (2024-04-10)
 
 BUG FIXES:
