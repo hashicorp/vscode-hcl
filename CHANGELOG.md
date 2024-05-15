@@ -1,3 +1,9 @@
+## [0.5.0] (2024-05-15)
+
+BUG FIXES:
+
+* Allow curly braces in block label strings [syntax#120](https://github.com/hashicorp/syntax/pull/120)
+
 ## [0.4.0] (2024-04-10)
 
 BUG FIXES:
@@ -114,7 +120,8 @@ ENHANCEMENTS:
  - Fix Publish Action ([#81](https://github.com/hashicorp/vscode-hcl/pull/81))
 
 <!-- Links to tag comparisons -->
-[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.4.0...main
+[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.5.0...main
+[0.5.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.2...v0.4.0
 [0.3.2]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.0...v0.3.1
