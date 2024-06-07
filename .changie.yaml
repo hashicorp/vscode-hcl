@@ -1,0 +1,36 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
+changesDir: .changes
+unreleasedDir: unreleased
+changelogPath: CHANGELOG.md
+versionExt: md
+versionFormat: '## {{.Version}} ({{.Time.Format "2006-01-02"}})'
+kindFormat: '{{.Kind}}:'
+changeFormat: |-
+  * {{.Body}} ([#{{.Custom.Issue}}](https://github.com/hashicorp/{{.Custom.Repository}}/issues/{{.Custom.Issue}}))
+custom:
+  - key: Issue
+    label: Issue/PR Number
+    type: int
+    minInt: 1
+kinds:
+- label: ENHANCEMENTS
+  auto: minor
+- label: BUG FIXES
+  auto: patch
+- label: INTERNAL
+  auto: patch
+- label: NOTES
+  auto: patch
+- label: BREAKING CHANGES
+  auto: minor
+newlines:
+  afterKind: 1
+  beforeKind: 1
+  endOfVersion: 2
+envPrefix: CHANGIE_
+replacements:
+  - path: package.json
+    find: '  "version": ".*",'
+    replace: '  "version": "{{.VersionNoPrefix}}",'

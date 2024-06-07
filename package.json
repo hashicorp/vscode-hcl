@@ -81,7 +81,8 @@
     "prepackage": "npm run download:syntax",
     "vscode:prepublish": "webpack --mode production --devtool hidden-source-map",
     "package": "vsce package",
-    "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
+    "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
+    "changelog:build": "changie batch auto && changie merge && npm i --package-lock-only"
   },
   "dependencies": {
     "@vscode/extension-telemetry": "^0.5.2",
