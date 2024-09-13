@@ -74,6 +74,18 @@ function detectProduct(doc: vscode.TextDocument) {
   if (fileName === '.terraform.lock.hcl') {
     return 'terraform-lock';
   }
+  if (fileName.endsWith('.tfstack.hcl')) {
+    return 'terraform-stack';
+  }
+  if (fileName.endsWith('.tfdeploy.hcl')) {
+    return 'terraform-deploy';
+  }
+  if (fileName.endsWith('.tftest.hcl')) {
+    return 'terraform-test';
+  }
+  if (fileName.endsWith('.tfmock.hcl')) {
+    return 'terraform-mock';
+  }
   if (fileName === 'terragrunt.hcl') {
     return 'terragrunt';
   }
