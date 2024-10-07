@@ -11,7 +11,7 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v4.2.0
       - name: Read extension version
         id: ext-version
         run: echo "VERSION=$(cat ./package.json | jq -r .version)" >> $GITHUB_OUTPUT
@@ -23,7 +23,7 @@ jobs:
           echo "Expected ref: refs/tags/v${{ steps.ext-version.outputs.VERSION }}"
           exit 1
       - name: Setup Node
-        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
+        uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # v4.0.4
         with:
           node-version-file: ".nvmrc"
       - name: Install dependencies
@@ -31,7 +31,7 @@ jobs:
       - name: Package VSIX
         run: npm run package
       - name: Upload VSIX as artifact
-        uses: actions/upload-artifact@834a144ee995460fba8ed112a2fc961b36a5ec5a # v4.3.6
+        uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4.4.0
         with:
           path: "*.vsix"
 
