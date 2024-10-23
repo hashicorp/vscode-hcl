@@ -14,8 +14,8 @@
   },
   "engines": {
     "npm": "~10.X",
-    "node": "~18.X",
-    "vscode": "^1.61.0"
+    "node": "~20.X",
+    "vscode": "^1.92.0"
   },
   "categories": [
     "Programming Languages",
@@ -88,13 +88,13 @@
     "path-browserify": "^1.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.18.12",
-    "@types/vscode": "^1.61.0",
+    "@types/node": "^20.14.8",
+    "@types/vscode": "^1.92.0",
     "@types/webpack-env": "^1.17.0",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "@vscode/test-electron": "^2.0.3",
-    "@vscode/vsce": "^2.19.0",
+    "@vscode/vsce": "^3.2.0",
     "assert": "^2.0.0",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.4.0",
