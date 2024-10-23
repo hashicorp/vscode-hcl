@@ -1,3 +1,17 @@
+## [0.6.0] (2024-10-23)
+
+ENHANCEMENTS:
+
+* Use `#` instead of `//` for single line comments [#309](https://github.com/hashicorp/vscode-hcl/pull/309)
+
+BUG FIXES:
+
+* Don't parse expressions containing an open curly brace as blocks [syntax#149](https://github.com/hashicorp/syntax/pull/149)
+
+INTERNAL:
+* Detect Terraform Stacks, Deploy, Test, and Mock files [#316](https://github.com/hashicorp/vscode-hcl/pull/316)
+* Bump dependencies through `npm audit fix` [#323](https://github.com/hashicorp/vscode-hcl/pull/323)
+
 ## [0.5.0] (2024-05-15)
 
 BUG FIXES:
@@ -120,7 +134,8 @@ ENHANCEMENTS:
  - Fix Publish Action ([#81](https://github.com/hashicorp/vscode-hcl/pull/81))
 
 <!-- Links to tag comparisons -->
-[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.5.0...main
+[Unreleased]: https://github.com/hashicorp/vscode-hcl/compare/v0.6.0...main
+[0.6.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.2...v0.4.0
 [0.3.2]: https://github.com/hashicorp/vscode-hcl/compare/v0.3.1...v0.3.2
