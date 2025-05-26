@@ -13,7 +13,6 @@ updates:
       - dependency-name: "@typescript-eslint/*"
         update-types:
           ["version-update:semver-minor", "version-update:semver-patch"]
-  # Dependabot only updates hashicorp GHAs, external GHAs are managed by internal tooling (tsccr)
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
