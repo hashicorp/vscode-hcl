@@ -17,3 +17,11 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      github-actions-breaking:
+        update-types:
+          - major
+      github-actions-backward-compatible:
+        update-types:
+          - minor
+          - patch
