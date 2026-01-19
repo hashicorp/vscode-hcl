@@ -59,11 +59,30 @@
           "light": "./assets/HashiCorp_Icon_Black_RGB.svg",
           "dark": "./assets/HashiCorp_Icon_White_RGB.svg"
         }
+      },
+      {
+        "id": "waypoint_hcl",
+        "aliases": [
+          "HCL"
+        ],
+        "filenames": [
+          "waypoint.hcl"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./assets/waypoint.svg",
+          "dark": "./assets/waypoint.svg"
+        }
       }
     ],
     "grammars": [
       {
         "language": "hcl",
+        "scopeName": "source.hcl",
+        "path": "./syntaxes/hcl.tmGrammar.json"
+      },
+      {
+        "language": "waypoint_hcl",
         "scopeName": "source.hcl",
         "path": "./syntaxes/hcl.tmGrammar.json"
       }
