@@ -66,6 +66,16 @@
         "language": "hcl",
         "scopeName": "source.hcl",
         "path": "./syntaxes/hcl.tmGrammar.json"
+      },
+      {
+        "scopeName": "markdown.hcl.codeblock",
+        "path": "./syntaxes/hcl.markdown.tmLanguage.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.hcl": "hcl"
+        }
       }
     ]
   },

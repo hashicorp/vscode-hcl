@@ -28,24 +28,27 @@ function getExtensionInfo(): ExtensionInfo {
 async function run(info: ExtensionInfo) {
   const release = `v${info.syntaxVersion}`;
 
-  const fileName = `${info.name}.tmGrammar.json`;
-  const url = `https://github.com/hashicorp/syntax/releases/download/${release}/${fileName}`;
-  console.log(`Downloading: ${url}`);
+  const fileNames = [`${info.name}.tmGrammar.json`, `${info.name}.markdown.tmLanguage.json`];
 
   const cwd = path.resolve(__dirname);
   const buildDir = path.basename(cwd);
   const repoDir = cwd.replace(buildDir, '');
   const installPath = path.join(repoDir, 'syntaxes');
 
-  const fpath = path.join(installPath, fileName);
   if (fs.existsSync(installPath)) {
     fs.rmSync(installPath, { recursive: true, force: true });
   }
   fs.mkdirSync(installPath);
 
-  const content = await got({ url }).text();
-  fs.writeFileSync(fpath, content);
-  console.log(`Download completed: ${fpath}`);
+  for (const fileName of fileNames) {
+    const url = `https://github.com/hashicorp/syntax/releases/download/${release}/${fileName}`;
+    console.log(`Downloading: ${url}`);
+
+    const fpath = path.join(installPath, fileName);
+    const content = await got({ url }).text();
+    fs.writeFileSync(fpath, content);
+    console.log(`Download completed: ${fpath}`);
+  }
 }
 
 const info = getExtensionInfo();
